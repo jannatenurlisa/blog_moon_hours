@@ -70,8 +70,8 @@ function draw() {
     ctx.fillStyle = mg;
     ctx.fill();
     const mh = ctx.createRadialGradient(moon.x, moon.y, moon.r * 0.8, moon.x, moon.y, moon.r * 2.5);
-    mh.addColorStop(0, 'rgba(74,127,165,0.18)');
-    mh.addColorStop(1, 'rgba(74,127,165,0)');
+    mh.addColorStop(0, 'rgba(58,100,140,0.18)');
+    mh.addColorStop(1, 'rgba(58,100,140,0)');
     ctx.beginPath();
     ctx.arc(moon.x, moon.y, moon.r * 2.5, 0, Math.PI * 2);
     ctx.fillStyle = mh;
@@ -128,7 +128,7 @@ function draw() {
         const alpha = (Math.sin(p.pulse) * 0.4 + 0.5) * 0.7;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(74,127,165,${alpha})`;
+        ctx.fillStyle = `rgba(58,100,140,${alpha})`;
         ctx.fill();
         if (p.r > 0.9) drawCross(p.x, p.y, p.r * 2, alpha * 0.5);
     });
