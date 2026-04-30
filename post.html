@@ -68,14 +68,15 @@
                 </div>
 
                 <!-- COMMENTS -->
+                <!-- COMMENTS -->
                 <div class="comments-section">
                     <div class="comments-title">leave a note</div>
-                    <div class="comment-form">
-                        <input type="text" placeholder="your name" />
-                        <input type="email" placeholder="your email (not shown)" />
-                        <textarea placeholder="what did this make you think about..."></textarea>
-                        <button class="comment-submit">send it ✦</button>
-                    </div>
+                    <form class="comment-form" action="https://formspree.io/f/xnjwawkg" method="POST">
+                        <input type="text" name="name" placeholder="your name" />
+                        <input type="email" name="email" placeholder="your email (not shown)" />
+                        <textarea name="message" placeholder="what did this make you think about..."></textarea>
+                        <button type="submit" class="comment-submit">send it ✦</button>
+                    </form>
                 </div>
 
             </div>
